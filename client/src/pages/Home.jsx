@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import SearchBar from '../components/SearchBar';
 
 const Container = styled.div`
 height:100%;
@@ -40,6 +41,7 @@ const Home = () => {
                 Explore popular post in the community
                 <Span>⦿ Generated with AI ⦿</Span>
             </Headline>
+            <SearchBar/>
         </Container>
     )
 }
