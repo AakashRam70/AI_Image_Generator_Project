@@ -2,7 +2,7 @@ import styled, { ThemeProvider } from "styled-components";
 import { darkTheme } from "./utils/Theme"
 import Home from "./pages/Home";
 import CreatePost from "./pages/CreatePost";
-import {BrowserRouter} from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 const Container = styled.div`
 width:100%;
@@ -30,9 +30,10 @@ function App() {
       <Container>
         <Wrapper>
           <BrowserRouter>
-
-            <Home />
-            <CreatePost />
+            <Routes>
+              <Route path="/" element={<Home />} exact />
+              <Route path="/post" element={<CreatePost />} exact />
+            </Routes>
           </BrowserRouter>
         </Wrapper>
       </Container>
