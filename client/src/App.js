@@ -2,6 +2,7 @@ import styled, { ThemeProvider } from "styled-components";
 import { darkTheme } from "./utils/Theme"
 import Home from "./pages/Home";
 import CreatePost from "./pages/CreatePost";
+import {BrowserRouter} from "react-router-dom";
 
 const Container = styled.div`
 width:100%;
@@ -28,8 +29,11 @@ function App() {
     <ThemeProvider theme={darkTheme}>
       <Container>
         <Wrapper>
-          <Home />
-          <CreatePost />
+          <BrowserRouter>
+
+            <Home />
+            <CreatePost />
+          </BrowserRouter>
         </Wrapper>
       </Container>
     </ThemeProvider>
