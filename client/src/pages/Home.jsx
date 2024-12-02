@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import SearchBar from '../components/SearchBar';
+import ImageCard from '../components/ImageCard';
 
 const Container = styled.div`
 height:100%;
@@ -43,13 +44,12 @@ max-widtgh:1400px;
 padding:32px 0px;
 display:flex;
 justify-content:center;
-background:red;
 `;
 
 const CardWrapper = styled.div`
 display:grid;
 gap:20px;
-@media (max-width:1200px){
+@media (min-width:1200px){
     grid-template-columns:repeat(4, 1fr);
 }
 @media (min-width:640px) and (max-width:1199px){
@@ -70,7 +70,7 @@ const Home = () => {
             <SearchBar />
             <Wrapper>
                 <CardWrapper>
-                    <div>Card</div>
+                    <ImageCard/>
                 </CardWrapper>
             </Wrapper>
         </Container>
