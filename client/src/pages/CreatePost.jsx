@@ -8,7 +8,9 @@ overflow-y:scroll;
 
 const CreatePost = () => {
     return (
-        <div>CreatePost</div>
+        <Container>
+            CreatePost
+        </Container>
     )
 }
 

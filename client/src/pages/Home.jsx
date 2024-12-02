@@ -31,7 +31,7 @@ const Headline = styled.div`
 const Span = styled.div`
  font-size:30px;
     font-weight:800;
-    color:${({ theme }) => theme.secondary};
+    color:#bd40e3;
 `;
 
 const Home = () => {
