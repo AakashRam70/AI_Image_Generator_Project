@@ -21,7 +21,7 @@ padding:8px 12px;
 }
 
 ${({ type, theme }) => type === "secondary" ? `
-background:${theme.secondary};:`
+background:${theme.secondary};`
         : `background:${theme.primary};`}
     ${({ isDisanled }) => isDisanled && `opacity:0.4;
     cursor:not-allowed;`}

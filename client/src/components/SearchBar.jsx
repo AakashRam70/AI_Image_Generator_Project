@@ -23,6 +23,7 @@ const SearchBar = () => {
                 outline: "none",
                 width: "100%",
                 color: "inherit",
+                fontSize:"16px",
                 background: "transparent"
             }} />
         </SearchBarContainer>
