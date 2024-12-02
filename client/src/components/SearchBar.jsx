@@ -17,15 +17,14 @@ const SearchBarContainer = styled.div`
 const SearchBar = () => {
     return (
         <SearchBarContainer>
-            <SearchOutlined>
-                <input type='text' style={{
-                    border: "none",
-                    outline: "none",
-                    width: "100%",
-                    color: "inherit",
-                    background: "transparent"
-                }} />
-            </SearchOutlined>
+            <SearchOutlined />
+            <input style={{
+                border: "none",
+                outline: "none",
+                width: "100%",
+                color: "inherit",
+                background: "transparent"
+            }} />
         </SearchBarContainer>
     )
 }
