@@ -61,6 +61,7 @@ gap:20px;
 `;
 
 const Home = () => {
+    const 
     return (
         <Container>
             <Headline>
@@ -70,7 +71,7 @@ const Home = () => {
             <SearchBar />
             <Wrapper>
                 <CardWrapper>
-                    <ImageCard/>
+                    <ImageCard item={item} />
                 </CardWrapper>
             </Wrapper>
         </Container>
