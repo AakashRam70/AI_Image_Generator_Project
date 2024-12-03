@@ -61,7 +61,11 @@ gap:20px;
 `;
 
 const Home = () => {
-    const 
+    const item = {
+        photo: "",
+        author: "",
+        prompt: "",
+    }
     return (
         <Container>
             <Headline>
