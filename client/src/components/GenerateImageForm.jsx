@@ -1,5 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
+import TextInput from './TextInput'
+import Button from './button'
+import { AutoAwesome } from '@mui/icons-material';
 
 const Form = styled.form`
 flex:1;
@@ -47,9 +50,9 @@ const GenerateImageForm = () => {
                 <Desc>Prompt</Desc>
             </Top>
             <Body>
-                Body
+                <TextInput />
             </Body>
-            <Actions>Actions</Actions>
+            <Actions><Button text="Generate Image" flex leftIcon={<AutoAwesome />} /></Actions>
         </Form>
     )
 }
