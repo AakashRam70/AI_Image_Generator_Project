@@ -1,4 +1,3 @@
-import React from 'react'
 import styled from 'styled-components';
 import { SearchOutlined } from '@mui/icons-material';
 
@@ -23,7 +22,7 @@ const SearchBar = () => {
                 outline: "none",
                 width: "100%",
                 color: "inherit",
-                fontSize:"16px",
+                fontSize: "16px",
                 background: "transparent"
             }} />
         </SearchBarContainer>
