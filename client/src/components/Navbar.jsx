@@ -1,6 +1,5 @@
 import { AddRounded, ExploreRounded } from '@mui/icons-material'
 import Button from './button'
-import React from 'react'
 import styled from 'styled-components'
 import { useNavigate, useLocation } from 'react-router-dom'
 
@@ -23,7 +22,7 @@ const Container = styled.div`
 
 const Navbar = () => {
     const navigate = useNavigate();
-    const location = useLocation(); 
+    const location = useLocation();
     const path = location.pathname.split("/");
     return (
         <Container>
